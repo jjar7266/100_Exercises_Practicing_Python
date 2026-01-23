@@ -31,7 +31,7 @@ ch = "Hello everyone"
 
 # Leaving start and end empty means "use the whole string"
 
-# A step of -1 tell Python to walk through the string backwards
+# A step of -1 tells Python to walk through the string backwards
 
 rev_ch = ch[::-1]
 
