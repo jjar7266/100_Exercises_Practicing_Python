@@ -1,0 +1,36 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment (UV or venv)
+.venv/
+uv.lock
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Environment config
+.env
+*.env
+
+# Output folders (if you generate media or logs later)
+downloads/
+*.mp3
+*.mp4
+*.wav
+*.log
+
+# Build artifacts (if you use Nuitka or PyInstaller later)
+build/
+dist/
+*.spec
+
+# Exercise-specific junk (if you add temp files or scratchpads)
+scratch/
+*.bak
+*.tmp
