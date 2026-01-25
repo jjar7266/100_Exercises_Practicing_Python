@@ -4,7 +4,7 @@
 
 # A set of exercises with different levels of complexity
 
-# Beginner-level exercises
+# Intermediate-level exercises
 
 # Code Solution Written by: Jose "Joe" Ruiz
 
