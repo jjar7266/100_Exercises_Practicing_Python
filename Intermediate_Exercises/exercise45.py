@@ -31,10 +31,10 @@ def averageList(L):
     for num in L:
         total += num
         count += 1
-    
+
     if count == 0:
-        return 0  # or None 
-    
+        return 0  # or None
+
     return total / count
 
 print(averageList([1, 2, 3, 4, 5, 6, 7]))
@@ -109,7 +109,7 @@ if count == 0:
     return 0
 
 This keeps the function safe.
-"""
+
 # ============================================================
 
 # Alternate Solutions
@@ -137,7 +137,7 @@ def averageList(L):
 
     if count == 0:
         return 0
-    
+
     return total / count
 
 # C. Using a running average (advanced concept)
@@ -147,7 +147,7 @@ def averageList(L):
 def averageList(L):
     if len(L) == 0:
         return 0
-    
+
     avg = 0
     count = 0
 
@@ -156,7 +156,7 @@ def averageList(L):
         avg = avg + (num - avg) / count
 
     return avg
-
+"""
 
 
 
