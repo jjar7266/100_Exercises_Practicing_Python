@@ -1,36 +1,48 @@
-# Python cache and compiled files
+# -------------------------
+# Python cache and artifacts
+# -------------------------
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
-
-# Virtual environment (UV or venv)
-.venv/
-uv.lock
-
-# OS-specific junk
-.DS_Store
-Thumbs.db
-
-# VS Code settings
-.vscode/
-
-# Environment config
-.env
-*.env
-
-# Output folders (if you generate media or logs later)
-downloads/
-*.mp3
-*.mp4
-*.wav
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
 *.log
 
-# Build artifacts (if you use Nuitka or PyInstaller later)
-build/
-dist/
-*.spec
+# -------------------------
+# Virtual environments
+# -------------------------
+.venv/
+venv/
+env/
+ENV/
 
-# Exercise-specific junk (if you add temp files or scratchpads)
+# -------------------------
+# VS Code settings
+# -------------------------
+.vscode/
+.history/
+
+# -------------------------
+# OS junk files
+# -------------------------
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# -------------------------
+# Project-specific ignores
+# -------------------------
+# Downloads or generated output (if used in exercises)
+downloads/
+downloads/mp3/
+downloads/mp4/
+
+# Any temporary scratch files
 scratch/
-*.bak
-*.tmp
+temp/
+tmp/
