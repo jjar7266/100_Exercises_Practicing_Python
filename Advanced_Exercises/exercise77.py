@@ -1,6 +1,6 @@
 # 100 Exercises for Practicing PYTHON
 # Author: Laurentine K. Masson
-# Intermediate-level exercises
+# Advanced-level exercises
 # Code Solution Written by: Jose "Joe" Ruiz
 
 # Exercise 77 - Recreating the replace method
