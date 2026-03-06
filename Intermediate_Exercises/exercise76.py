@@ -3,7 +3,7 @@
 # Intermediate-level exercises
 # Code Solution Written by: Jose "Joe" Ruiz
 
-# Exercise 76 — Recreating the join method
+# Exercise 76 - Recreating the join method
 
 """
 Write a function join(L, character) that transforms a list L into a string using
@@ -18,54 +18,94 @@ Verification tests:
 """
 
 def join(L, character):
-    """
-    Recreate Python's built-in str.join() behavior.
-    Takes a list L and a separator character, and returns a single string.
-    """
+    # Build the final string manually
     result = ""
     for i in range(len(L)):
         result += L[i]
-        # Add separator only between elements, not after the last one
+        # Add separator only between elements
         if i < len(L) - 1:
             result += character
     return result
 
+# -------------------- TEACHING NOTES --------------------
+# Topic: Recreating Python's join() method
+#
+# 1. Manual string building:
+#    We append each element of the list to a result string.
+#
+# 2. Separator logic:
+#    We add the separator only between elements, never after the last one.
+#
+# 3. Why this works:
+#    It mimics how Python's built-in join() method behaves internally.
+#
+# 4. Flexibility:
+#    Works with any list of strings and any separator.
 
-# -----------------------------
-# Verification Tests
-# -----------------------------
+# -------------------- EXAMPLES --------------------
+#
+# Example 1:
+# >>> join(["Hello", "Aurelie"], " ")
+# "Hello Aurelie"
+#
+# Example 2:
+# >>> join(["Hi", " How are you?"], ",")
+# "Hi, How are you?"
+#
+# Example 3:
+# >>> join(["a", "b", "c"], "-")
+# "a-b-c"
 
-print(join(["Hello", "Aurelie"], " "))          # Expected: "Hello Aurelie"
-print(join(["Hi", " How are you?"], ","))       # Expected: "Hi, How are you?"
-print(join(["a", "b", "c"], "-"))               # Expected: "a-b-c"
-print(join(["one"], ","))                       # Expected: "one"
-print(join([], ","))                            # Expected: ""
+# -------------------- COMMON PITFALLS & GOTCHAS --------------------
+#
+# 1. Adding a separator after the last element:
+#    This produces strings like "a-b-c-" which is incorrect.
+#
+# 2. Forgetting to handle empty lists:
+#    join([], ",") should return "".
+#
+# 3. Mixing non-string elements:
+#    Python's real join() requires all elements to be strings.
 
+# -------------------- BEGINNER vs. INTERMEDIATE vs. ADVANCED --------------------
+#
+# Beginner:
+#     result = ""
+#     for i in range(len(L)):
+#         result += L[i]
+#         if i < len(L) - 1:
+#             result += character
+#     return result
+#
+# Intermediate (My implementation):
+#     def join(L, character):
+#         result = ""
+#         for i in range(len(L)):
+#             result += L[i]
+#             if i < len(L) - 1:
+#                 result += character
+#         return result
+#
+# Advanced (Pythonic):
+#     def join(L, character):
+#         return character.join(L)
 
-# -----------------------------
-# Teaching Notes
-# -----------------------------
-"""
-This exercise recreates the behavior of Python's built-in "separator.join(list)".
+# -------------------- PATTERNS TO RECOGNIZE --------------------
+#
+# 1. Using indexing to detect the last element.
+# 2. Building strings incrementally.
+# 3. Recreating built-in behavior manually.
+# 4. Handling edge cases like empty lists.
 
-Key ideas:
-- You build the final string manually.
-- You must avoid adding the separator after the last element.
-- Using indexing (range + len) makes it easy to detect the last element.
-
-Why not use Python's built-in join?
-    Because the goal is to understand how join *works internally*.
-
-Edge cases:
-- A list with one element → return that element unchanged.
-- An empty list → return an empty string.
-"""
-
-# -----------------------------
-# Alternative Approach (More Pythonic)
-# -----------------------------
-"""
-def join(L, character):
-    return character.join(L)
-"""
-
+# -------------------- MINI-QUIZ (ACTIVE RECALL) --------------------
+#
+# Q1: Why do we check if i < len(L) - 1?
+# A1: To avoid adding the separator after the last element.
+#
+# Q2: What should join([], ",") return?
+# A2: An empty string "".
+#
+# Q3: What is the Pythonic way to join a list?
+# A3: character.join(L)
+#
+# ---------------------------------------------------------------
