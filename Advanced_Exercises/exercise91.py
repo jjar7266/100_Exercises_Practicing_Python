@@ -3,6 +3,8 @@
 # Advanced-level exercises
 # Code Solution Written by: Jose "Joe" Ruiz
 
+# Exercise 91 - Inheriting a class
+
 from exercise90 import Rectangle, Rectangle_Advanced
 
 # Exercise 91 - Inheriting a class
