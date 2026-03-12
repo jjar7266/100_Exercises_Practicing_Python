@@ -12,7 +12,7 @@
 
 # ===========================================================
 """
-Write a sequence of Pyghon instructions to declare 3 variables a, b, and c,
+Write a sequence of Python instructions to declare 3 variables a, b, and c,
 assigning them the values 1, "France", and 36.2 respectively, then
 display the values of these variables on the console.
 """
