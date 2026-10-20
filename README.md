@@ -119,3 +119,29 @@ This repository is now a reference I can revisit anytime to reinforce concepts o
 <p align="center">
   <strong>Support jjar7266's open‑source work and help fuel future projects.</strong>
 </p>
+
+---
+
+# ⚠️ Copyright & Educational Use Notice
+
+This repository is an independent educational project based on:
+
+**100 Exercises for Practicing Python**
+by **Laurentine K. Masson**
+
+The Python solutions, notes, comments, project organization, and supporting
+materials contained in this repository were created by **Jose "Joe" Ruiz**
+while working through the exercises for personal study and skill development.
+
+The exercise prompts themselves originate from the book and remain the property
+of their respective copyright holder(s).
+
+If any exercise text included in this repository exceeds what is permissible
+for educational reference, documentation, commentary, or fair use, the
+copyright holder is encouraged to contact the repository owner and the content
+will be reviewed and adjusted accordingly.
+
+This repository is not affiliated with, endorsed by, sponsored by, or
+published by the author or publisher of the book.
+
+---
